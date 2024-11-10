@@ -1,0 +1,163 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4d4d4;
+    color: #333;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+}
+
+h1 {
+    font-size: 28px;
+    margin: 2%;
+    font-weight: bolder;
+}
+
+hr {
+    border: #c7c7c7, 1.5px, solid;
+    border-radius: 10px;
+}
+
+div {
+    margin: 1%
+}
+
+header {
+    width: 98%;
+    background-color: #E2062C;
+    color: whitesmoke;
+    text-align: center;
+    padding: 1%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+}
+
+
+a {
+    color: whitesmoke;
+    background-color: #ee2e4e;
+    padding: 1%;
+    border-radius: 5px;
+    width: 12%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    font-size: large;
+    text-align: center;
+    transition: background-color 0.3s ease;
+}
+
+a:hover {
+    background-color:#ee2e4e;
+    color:white;
+    text-decoration: none;
+}
+
+
+main {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1%;
+}
+
+section {
+    display: inline-flex;
+    width: 80%;
+    margin: 1% auto;
+    background-color: whitesmoke;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nosotros {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.movie-poster {
+    width: 25%;
+    aspect-ratio: 2 / 3;
+    margin: 0 5px;
+    transition: transform 0.3s ease;
+    transform-origin: center bottom;
+    transform: perspective(800px) rotateX(5deg);
+}
+
+.movie-poster:hover {
+    transform: perspective(800px) rotateX(12deg);
+    box-shadow: 4 10px 13px rgba(0, 0, 0, 0.1);
+
+}   
+
+.infoimg {
+    width: 100%; 
+    min-width: 240px; 
+    max-width: 240px;
+    height: auto; 
+    display: block;
+    margin: 0 auto;
+}
+
+
+.custom-carousel-control {
+    align-self: center;
+    width: 40px;
+    height: 40px;
+    background-size: 80%;
+}
+@media (max-width: 768px) {
+    .movie-poster {
+        width: 40%;
+    }
+}
+
+footer {
+    border-radius: 10px;
+    width: 98%;
+    background-color: #383838;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin-top: 1%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.video {
+    display: flex;
+    justify-content: space-between;
+}
+
+#back-to-top {  
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    width: 50px;
+    height: 50px;
+    background: url("../img/flecha.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: solid 20px whitesmoke;
+    cursor: pointer;
+    padding: 1%;
+    border-radius: 100%;
+    background-color: whitesmoke;
+    filter: drop-shadow(5px 5px 10px #000000);
+    transition: 0.5s;
+}
+
+#back-to-top:hover {
+    padding: 1.5%;
+    box-shadow: 40px 50px 102px 4px rgba(0,0,0,0.75);
+}
