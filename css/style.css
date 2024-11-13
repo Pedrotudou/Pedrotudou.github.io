@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #d4d4d4;
+    background-color: #e0e0e0;
     color: #333;
     padding: 1%;
     display: flex;
@@ -11,55 +11,56 @@ body {
 
 h1 {
     font-size: 28px;
-    margin: 2%;
+    margin: 1%;
     font-weight: bolder;
-}
-
-hr {
-    border: #c7c7c7, 1.5px, solid;
-    border-radius: 10px;
-}
-
-div {
-    margin: 1%
+    color: #272727;
 }
 
 header {
-    width: 98%;
-    background-color: #E2062C;
-    color: whitesmoke;
-    text-align: center;
+    display: flex;
+    width: 100%;
+    background-color: #e2062c;
+    color: #f9f9f9;
     padding: 1%;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    justify-content: flex-start;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+header h1 {
+    color: #f3f3f3;
 }
 
+img {
+    padding: 0% 1%;
+}
 
 a {
-    margin: 1%;
-    text-overflow: ellipsis;
-    color: whitesmoke;
-    background-color: #db5067;
-    padding: 1.5%;
+    display: inline-block;
+    min-width: 12%;
+    color: #f9f9f9;
+    background-color: #b1253d;
+    padding: 1%;
+    margin: 1px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
 }
 
 a:hover {
-    background-color: #ee2e4e;
-    color: white;
-    text-decoration: none;
+    background-color: #ff4d6b;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+
 }
 
+hr {
+    border-width: 2px;
+    border-radius: 2px;
+    border-color: #b1253d;
+}
 
 main {
     width: 100%;
@@ -73,17 +74,46 @@ section {
     display: inline-flex;
     width: 97%;
     margin: 1% auto;
-    background-color: whitesmoke;
+    background-color: #f9f9f9;
     padding: 2%;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    word-wrap: break-word;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: #333;
+    border: #e2062c 1px, solid;
 }
 
 .nosotros {
     display: flex;
     align-items: center;
     gap: 15px;
+}
+
+.personajes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.personaje {
+    width: 48%;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.personaje:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+.personaje img {
+    float: left;
+    margin: 0 15px 10px 0;
+    width: 40%;
+    height: auto;
 }
 
 .movie-poster {
@@ -98,7 +128,6 @@ section {
 .movie-poster:hover {
     transform: perspective(800px) rotateX(12deg);
     box-shadow: 4 10px 13px rgba(0, 0, 0, 0.1);
-
 }
 
 .infoimg {
@@ -107,9 +136,8 @@ section {
     max-width: 240px;
     height: auto;
     display: block;
-    margin: 0 auto;
+    margin: 10px;
 }
-
 
 .custom-carousel-control {
     align-self: center;
@@ -118,26 +146,35 @@ section {
     background-size: 80%;
 }
 
-@media (max-width: 768px) {
-    .movie-poster {
-        width: 40%;
-    }
-}
-
-footer {
-    border-radius: 10px;
-    width: 98%;
-    background-color: #383838;
-    color: white;
-    text-align: center;
-    padding: 2%;
-    margin-top: 1%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
 .video {
     display: flex;
     justify-content: space-between;
+}
+
+.gallery-container ul {
+    columns: 230px;
+    column-gap: 5px;
+}
+
+.gallery-container li {
+    break-inside: avoid;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
 }
 
 #back-to-top {
@@ -158,7 +195,104 @@ footer {
     transition: 0.5s;
 }
 
+
 #back-to-top:hover {
-    padding: 1.5%;
-    box-shadow: 40px 50px 102px 4px rgba(0, 0, 0, 0.75);
+    transform: scale(1.1);
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .movie-poster {
+        width: 40%;
+    }
+}
+
+footer {
+    border-radius: 10px;
+    width: 98%;
+    background-color: #383838;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin-top: 1%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 40%;
+    background-color: #f9f9f9;
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    color: #333;
+    border: #e2062c 1px, solid;
+}
+
+label,
+button {
+    margin-top: 3%;
+    font-weight: bold;
+}
+
+button {
+    color: #f9f9f9;
+    background-color: #b1253d;
+    padding: 2%;
+    border-radius: 5px;
+    border: none;
+}
+
+button:hover {
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+    background-color: #ff4d6b;
+    color: #ffffff;
+    transform: scale(1.05);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+
+.tarjeta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.tarjeta .redes {
+    display: flex;
+    gap: 10px;
+}
+
+.tarjeta .redes img {
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    transition: transform 0.5s ;
+    filter: drop-shadow(2px 3px 5px #000000);
+    margin: 2%;
+}
+
+.tarjeta .redes img:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(5px 5px 10px #000000);
 }
