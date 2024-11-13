@@ -221,22 +221,25 @@ footer {
     background-color: #383838;
     color: white;
     text-align: center;
-    padding: 2%;
     margin-top: 1%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-wrap:normal;
+    flex-wrap: wrap;
+    padding: 2%;
 }
 
 .form-container {
-    padding: 1%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 
 form {
     display: flex;
     flex-direction: column;
-    height: 60%;
-    width: 40%;
+    height: auto;
+    width: 50%;
     background-color: #f9f9f9;
     padding: 2%;
     border-radius: 10px;
@@ -272,24 +275,28 @@ button:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: auto;
+    width: 50%;
     justify-content: space-evenly;
     text-align: center;
+    word-break: break-all;
 }
 
 .tarjeta .redes {
     display: flex;
     gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+
 }
 
 .tarjeta .redes img {
     justify-content: center;
-    width: 80px;
-    height: 80px;
+    width: 10%;
+    min-width: 70px;
+    height: auto;
     cursor: pointer;
     transition: transform 0.5s ;
     filter: drop-shadow(2px 3px 5px #000000);
-    margin: 2%;
 }
 
 .tarjeta .redes img:hover {
