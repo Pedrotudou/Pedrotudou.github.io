@@ -5,40 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo de Cars y Aviones - Disney</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script>
-        window.addEventListener("scroll", function() {
-    const element = document.getElementById("myElement");
-    const scrollPosition = window.scrollY;
+        window.addEventListener("scroll", function () {
+            const element = document.getElementById("myElement");
+            const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 300) {
-        element.classList.add("visible");
-    } else {
-        element.classList.remove("visible");
-    }
-});
+            // Cambia 300 por la cantidad de píxeles de scroll que quieres
+            if (scrollPosition > 300) {
+                element.classList.add("visible");
+            } else {
+                element.classList.remove("visible");
+            }
+        });
 
     </script>
 </head>
 
 <body>
-  <header id="inicio">
+    <header id="inicio">
         <img src="img/disney-and-pixar-cars.svg" width="13%" height="auto">
         <div style="width: 100%;">
-        <h1>Universo de Cars y Aviones de Disney</h1>
-        <hr>
-        <nav>
-            <a href="personajes.html">Personajes</a>
-            <a href="peliculas.html">Películas</a>
-            <a href="index.html">Inicio</a>
-            <a href="videos.html">Videos</a>
-            <a href="galeria.html">Galería</a>
-            <a href="juegos.html">Juegos</a>
-            <a href="nosotros.html">Nosotros</a>
-            
-        </nav>
-    </div>
+            <h1>Universo de Cars y Aviones de Disney</h1>
+            <hr>
+            <nav>
+                <a href="personajes.html">Personajes</a>
+                <a href="contacto.html">Películas</a>
+                <a href="index.html">Inicio</a>
+                <a href="videos.html">Videos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="juegos.html">Juegos</a>
+                <a href="nosotros.html">Nosotros</a>
+
+            </nav>
+        </div>
     </header>
     <br>
     <main>
@@ -66,7 +68,7 @@
         </section>
 
         <section>
-            <img src="img/aviones.jpg"  width="30%" height="20%" class="movie-poster">
+            <img src="img/aviones.jpg" width="30%" height="20%" class="movie-poster">
             <div>
                 <h2>Peliculas de Aviones</h2>
                 <hr>
@@ -94,14 +96,16 @@
 
                 <dl>
                     <div class="nosotros">
-                        <img src="img/lucas.jpg" alt="Lucas De Moura"  width="30%" height="25%">
+                        <img src="img/lucas.jpg" alt="Lucas De Moura" width="30%" height="25%">
                         <div>
                             <dt>
 
                                 Lucas De Moura
                             </dt>
-                            <dd>Hola, soy Lucas De Moura y estudio en la Técnica Nº1 de Monte Grande. Elegimos hacer una página sobre Cars porque es una de esas películas que
-                                marcó nuestra infancia. Nos dejó recuerdos que llevamos siempre. Queremos que esta página
+                            <dd>Hola, soy Lucas De Moura y estudio en la Técnica Nº1 de Monte Grande. Elegimos hacer una
+                                página sobre Cars porque es una de esas películas que
+                                marcó nuestra infancia. Nos dejó recuerdos que llevamos siempre. Queremos que esta
+                                página
                                 refleje esa nostalgia y el cariño que muchos le tenemos a esta película que, a pesar de
                                 los años, sigue teniendo un lugar especial en nuestras vidas.
                             </dd>
@@ -109,14 +113,17 @@
                     </div>
 
                     <div class="nosotros">
-                        <img src="img/pedro.jpg" alt="Pedro Coppola"  width="30%" height="20%" >
+                        <img src="img/pedro.jpg" alt="Pedro Coppola" width="30%" height="20%">
                         <div>
                             <dt>
 
                                 Pedro Coppola
                             </dt>
-                            <dd>Hola, soy Pedro Coppola, estudiante de la Técnica Nº1 de Monte Grande. Cars es una peli que nos marcó de chicos. Más allá de la historia y los personajes, Cars fue esa película que llamaba la atención por su idea. Queremos compartir un poco de esa nostalgia y pasión por los personajes, las escenas y las historias que nos acompañaron desde chicos.
-                            </dd>   
+                            <dd>Hola, soy Pedro Coppola, estudiante de la Técnica Nº1 de Monte Grande. Cars es una peli
+                                que nos marcó de chicos. Más allá de la historia y los personajes, Cars fue esa película
+                                que llamaba la atención por su idea. Queremos compartir un poco de esa nostalgia y
+                                pasión por los personajes, las escenas y las historias que nos acompañaron desde chicos.
+                            </dd>
                         </div>
                     </div>
                 </dl>
@@ -124,49 +131,13 @@
         </section>
 
     </main>
-<footer>
+    <footer>
         <p>&copy; 2024 Disney. Todos los derechos reservados.</p>
-       
-        <div class="form-container">
-
-            <form action="index.html" method="post">
-                <h2>Formulario de Contacto</h2>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-               
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                
-                    <label for="subject">Asunto:</label>
-                    <input type="text" id="subject" name="subject" required>
-              
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required></textarea><br>  
-                
-                    <button type="submit">Enviar</button>
-            </form>
-
-            <div class="tarjeta">
-                <h2>Redes Sociales</h2>
-
-                <div class="redes">
-                    <img src="img/igpiola.png" alt="" width="2%">
-
-                        <img src="img/X.jpg" alt="" width="2%">
-                    
-                        <img src="img/face.png" alt="" width="2%">
-                </div>
-                <hr><br>
-                <div>
-                    <h2>Información de contacto</h2>
-                    <h4><b>Email: </b>paginacars@gmail.com</h4>
-                    <h4><b>Teléfono: </b>+54 9 11 3913 1817</h4>
-                </div>
-            </div>
     </footer>
-        <div class="hidden" id="myElement">
+    <div class="hidden" id="myElement">
         <button id="back-to-top" onclick="location.href='#inicio'"></button>
-    </div></body>
+    </div>
+</body>
 </body>
 </body>
 

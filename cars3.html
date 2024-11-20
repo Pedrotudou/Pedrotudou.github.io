@@ -5,49 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo de Cars y Aviones - Disney</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script>
-        window.addEventListener("scroll", function() {
-    const element = document.getElementById("myElement");
-    const scrollPosition = window.scrollY;
+        window.addEventListener("scroll", function () {
+            const element = document.getElementById("myElement");
+            const scrollPosition = window.scrollY;
 
-    if (scrollPosition > 300) {
-        element.classList.add("visible");
-    } else {
-        element.classList.remove("visible");
-    }
-});
-
+            // Cambia 300 por la cantidad de píxeles de scroll que quieres
+            if (scrollPosition > 300) {
+                element.classList.add("visible");
+            } else {
+                element.classList.remove("visible");
+            }
+        });
     </script>
 </head>
 
 <body>
-  <header id="inicio">
+    <header id="inicio">
         <img src="img/disney-and-pixar-cars.svg" width="13%" height="auto">
         <div style="width: 100%;">
-        <h1>Universo de Cars y Aviones de Disney</h1>
-        <hr>
-        <nav>
-            <a href="personajes.html">Personajes</a>
-            <a href="peliculas.html">Películas</a>
-            <a href="index.html">Inicio</a>
-            <a href="videos.html">Videos</a>
-            <a href="galeria.html">Galería</a>
-            <a href="juegos.html">Juegos</a>
-            <a href="nosotros.html">Nosotros</a>
-            
-        </nav>
-    </div>
+            <h1>Universo de Cars y Aviones de Disney</h1>
+            <hr>
+            <nav>
+                <a href="personajes.html">Personajes</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="index.html">Inicio</a>
+                <a href="videos.html">Videos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="juegos.html">Juegos</a>
+            </nav>
+        </div>
     </header>
     <br>
     <main>
-
         <h1>Cars 3</h1>
         <section>
-            <div>
+            <div style="margin: 0% 2%;">
                 <img src="img/cars3.jpg" alt="Imagen de la película Cars 3" class="infoimg">
-                <h2 style="margin-top: 5%; text-align: center;">Información</h2><hr>
+                <h2 style="margin-top: 5%; text-align: center;">Información</h2>
+                <hr>
                 <ul>
                     <li><strong>Director:</strong> Brian Fee</li>
                     <li><strong>Productora:</strong> Pixar Animation Studios</li>
@@ -59,64 +58,72 @@
             <div>
                 <h2>Cars 3 (2017)</h2>
                 <hr>
-                <p>En "Cars 3", Rayo McQueen enfrenta uno de los mayores desafíos de su vida cuando una nueva generación de autos de carrera tecnológicos y ultrarrápidos, liderados por el imbatible Jackson Storm, amenaza con dejarlo obsoleto. Después de un accidente impactante que lo obliga a retirarse temporalmente, McQueen se cuestiona si aún tiene lo necesario para competir al nivel de sus nuevos rivales. La historia explora la lucha de McQueen por adaptarse a los tiempos modernos y descubrir si aún puede ser el competidor que una vez fue.</p> <p>Con la ayuda de Cruz Ramírez, una entrenadora joven y entusiasta que sueña con alcanzar el mundo de las carreras, McQueen comienza un proceso de reinvención. La relación entre McQueen y Cruz revela temas de mentoría y superación, en la que McQueen, poco a poco, pasa de ser el protagonista en las pistas a convertirse en guía para Cruz, enseñándole los secretos y valores de las carreras. "Cars 3" fue elogiada por su tono emocional y su enfoque más profundo, que muestra a McQueen en un papel de mentor, dispuesto a transmitir su legado a la nueva generación. A través de esta historia de adaptación y legado, "Cars 3" conecta con audiencias de todas las edades, destacando la importancia de aceptar el cambio y de encontrar nuevos propósitos, sin dejar atrás las experiencias vividas.</p>
+                <p>En "Cars 3", Rayo McQueen enfrenta uno de los mayores desafíos de su vida cuando una nueva generación
+                    de autos de carrera tecnológicos y ultrarrápidos, liderados por el imbatible Jackson Storm, amenaza
+                    con dejarlo obsoleto. Después de un accidente impactante, McQueen se cuestiona si aún tiene lo
+                    necesario para competir al nivel de sus nuevos rivales. La historia explora la lucha de McQueen por
+                    adaptarse a los tiempos modernos y descubrir si aún puede ser el competidor que una vez fue.</p>
+                <p>Con la ayuda de Cruz Ramírez, una entrenadora joven y entusiasta, McQueen comienza un proceso de
+                    reinvención. A través de esta historia de adaptación y legado, "Cars 3" conecta con audiencias de
+                    todas las edades, destacando la importancia de aceptar el cambio y encontrar nuevos propósitos.</p>
+
                 <div>
                     <h2>Juegos de Cars 3</h2>
                     <p>Descubre los videojuegos basados en la emocionante historia de Cars 3:</p>
                     <hr>
+                    <section>
+                        <div>
+                            <img src="img/cars3.webp" class="infoimg" alt="Cars 3 Driven to Win"><br>
+                            <ul>
+                                <li><strong>Plataforma:</strong> PlayStation 4, Xbox One, Nintendo Switch, Wii U</li>
+                                <li><strong>Género:</strong> Carreras</li>
+                                <li><strong>Multijugador:</strong> Sí</li>
+                                <li><strong>Trailer:</strong> <a href="https://www.youtube.com/watch?v=oSmEYtaORaA"
+                                        target="_blank">Ver Trailer</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2>Cars 3: Driven to Win</h2>
+                            <hr>
+                            <p>Cars 3: Driven to Win, lanzado en 2017, permite a los jugadores asumir el papel de Rayo
+                                McQueen y otros personajes mientras compiten en carreras llenas de acción. Con múltiples
+                                modos de juego y gráficos de alta calidad, el título captura la esencia de Cars 3.</p>
+                        </div>
+                    </section>
                     <a href="juegos.html">Juegos</a>
                 </div><br>
                 <div>
                     <h2>Videos de Cars 3</h2>
                     <p>Mira trailers y videos de la tercera entrega de Cars aquí:</p>
                     <hr>
+                    <section class="video">
+                        <div style="width: 100%;">
+                            <h2>Trailer de Cars 3</h2>
+                            <hr>
+                            <p>Eclipsado por los coches jóvenes, Rayo McQueen intenta adaptarse y volver a competir tras
+                                un accidente inesperado.</p>
+                        </div>
+                        <video src="video/Cars 3 Teaser Trailer.mp4" controls width="60%" height="20%"></video>
+                    </section>
+                    <section class="video">
+                        <div style="width: 100%;">
+                            <h2>Carrera final de Cars 3</h2>
+                            <hr>
+                            <p>La escena final muestra a Cruz Ramírez participando junto a McQueen, simbolizando el paso
+                                del legado a una nueva generación.</p>
+                        </div>
+                        <video src="video/Cars 3 Escena Final.mp4" controls width="60%" height="20%"></video>
+                    </section>
                     <a href="videos.html">Videos</a>
                 </div>
-            </div>
-
         </section>
-       <footer>
+    </main>
+    <footer>
         <p>&copy; 2024 Disney. Todos los derechos reservados.</p>
-       
-        <div class="form-container">
-
-            <form action="index.html" method="post">
-                <h2>Formulario de Contacto</h2>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-               
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                
-                    <label for="subject">Asunto:</label>
-                    <input type="text" id="subject" name="subject" required>
-              
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required></textarea><br>  
-                
-                    <button type="submit">Enviar</button>
-            </form>
-
-            <div class="tarjeta">
-                <h2>Redes Sociales</h2>
-
-                <div class="redes">
-                    <img src="img/igpiola.png" alt="" width="2%">
-
-                        <img src="img/X.jpg" alt="" width="2%">
-                    
-                        <img src="img/face.png" alt="" width="2%">
-                </div>
-                <hr><br>
-                <div>
-                    <h2>Información de contacto</h2>
-                    <h4><b>Email: </b>paginacars@gmail.com</h4>
-                    <h4><b>Teléfono: </b>+54 9 11 3913 1817</h4>
-                </div>
-            </div>
     </footer>
     <div class="hidden" id="myElement">
         <button id="back-to-top" onclick="location.href='#inicio'"></button>
-    </div></body></body>
+    </div>
+</body>
 
 </html>

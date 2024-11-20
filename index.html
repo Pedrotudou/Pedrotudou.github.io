@@ -1,140 +1,87 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universo de Cars y Aviones - Disney</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        window.addEventListener("scroll", function() {
-    const element = document.getElementById("myElement");
-    const scrollPosition = window.scrollY;
-
-    if (scrollPosition > 300) {
-        element.classList.add("visible");
-    } else {
-        element.classList.remove("visible");
-    }
-});
-
-    </script>
 </head>
+
 <body>
     <header id="inicio">
         <img src="img/disney-and-pixar-cars.svg" width="13%" height="auto">
         <div style="width: 100%;">
-        <h1>Universo de Cars y Aviones de Disney</h1>
-        <hr>
-        <nav>
-            <a href="personajes.html">Personajes</a>
-            <a href="peliculas.html">Películas</a>
-            <a href="index.html">Inicio</a>
-            <a href="videos.html">Videos</a>
-            <a href="galeria.html">Galería</a>
-            <a href="juegos.html">Juegos</a>
-            <a href="nosotros.html">Nosotros</a>
-            
-        </nav>
-    </div>
+            <h1>Universo de Cars y Aviones de Disney</h1>
+            <hr>
+            <nav>
+                <a href="personajes.html">Personajes</a>
+                <a href="contacto.html">Contacto</a>
+                <a href="index.html">Inicio</a>
+                <a href="videos.html">Videos</a>
+                <a href="galeria.html">Galería</a>
+                <a href="juegos.html">Juegos</a>
+            </nav>
+        </div>
     </header>
-    
-<br>
+    <br>
     <main>
-        <h1>Inicio</h1>
-<section>
-    <img src="img/3caa115554f44216154adaed787e1610.jpg" width="41%" height="31%">
-    <div>
-        <h2>Cars: Una Aventura Sobre Ruedas</h2>
-        <hr>
-        <p>La saga de Cars de Disney-Pixar es una aventura emocionante ambientada en un mundo donde los autos tienen vida propia, emociones y sueños. La historia sigue a Rayo McQueen, un veloz auto de carreras que, en su búsqueda de fama y victorias, aprende importantes lecciones sobre la amistad, la humildad y el verdadero significado del éxito. A través de sus viajes, especialmente en el pintoresco pueblo de Radiator Springs, Rayo descubre el valor de la comunidad y el compañerismo. Con personajes entrañables y escenarios coloridos, Cars es mucho más que una historia de carreras; es un viaje hacia el corazón, lleno de humor, lecciones de vida y momentos que dejan una marca.</p>
-        <p>En esta página web te invitamos a que descubras más sobre este universo y sus diferentes partes, así también aprender de su saga hermana, "Aviones".</p>
-    </div>
-</section>
-
-<section id="peliculas">
-    <img src="img/poster1.jpg" width="20%" height="40%">
-    <div>
-        <h2>Películas</h2>
-        <hr>
-        <p>Explora la saga Cars y Aviones, llena de aventuras emocionantes y lecciones de vida. Desde Rayo McQueen hasta Dusty Crophopper, cada historia nos lleva por un viaje inolvidable sobre la amistad y el crecimiento personal.</p>
-        <a href="peliculas.html">Ver más</a>
-    </div>
-</section>
-
-<section id="personajes">
-    <img src="img/personajes.jpg" width="40%" height="40%">
-    <div>
-        <h2>Personajes</h2>
-        <hr>
-        <p>Conoce a los personajes icónicos como Rayo McQueen, Mate, y Dusty Crophopper, quienes con sus personalidades únicas nos muestran la importancia de la perseverancia, el humor y la amistad.</p>
-        <a href="personajes.html">Ver más</a>
-    </div>
-</section>
-
-<section id="videos">
-    <img src="img/gif cars.gif" width="40%" height="20%">
-    <div>
-        <h2>Videos</h2>
-        <hr>
-        <p>Disfruta de clips exclusivos, escenas memorables y momentos icónicos de las películas y series de Cars y Aviones que nos muestran todo el encanto de este universo.</p>
-        <a href="videos.html">Ver más</a>
-    </div>
-</section>
-
-<section id="juegos">
-    <img src="img/carsraceorama.jpg" width="20%" height="40%">
-    <div>
-        <h2>Juegos</h2>
-        <hr>
-        <p>Participa en carreras emocionantes y vive la adrenalina en juegos inspirados en Cars y Aviones, donde puedes ser parte de la acción y competir en escenarios espectaculares.</p>
-        <a href="juegos.html">Ver más</a>
-    </div>
-</section>
-
-    </main>
-    <footer>
-        <p>&copy; 2024 Disney. Todos los derechos reservados.</p>
-       
-        <div class="form-container">
-
-            <form action="index.html" method="post">
-                <h2>Formulario de Contacto</h2>
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required>
-               
-                    <label for="email">Correo Electrónico:</label>
-                    <input type="email" id="email" name="email" required>
-                
-                    <label for="subject">Asunto:</label>
-                    <input type="text" id="subject" name="subject" required>
-              
-                    <label for="message">Mensaje:</label>
-                    <textarea id="message" name="message" required></textarea><br>  
-                
-                    <button type="submit">Enviar</button>
-            </form>
-
-            <div class="tarjeta">
-                <h2>Redes Sociales</h2>
-
-                <div class="redes">
-                    <img src="img/igpiola.png" alt="" width="2%">
-
-                        <img src="img/X.jpg" alt="" width="2%">
-                    
-                        <img src="img/face.png" alt="" width="2%">
+        <h1>Películas</h1>
+        <section>
+            <div id="movieCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/cars.jpg" class="movie-poster" alt="Cars"
+                                onclick="window.location.href='cars.html'">
+                            <img src="img/cars2.webp" class="movie-poster" alt="Cars 2"
+                                onclick="window.location.href='cars2.html'">
+                            <img src="img/cars3.jpg" class="movie-poster" alt="Cars 3"
+                                onclick="window.location.href='cars3.html'">
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-center">
+                            <img src="img/aviones.jpg" class="movie-poster" alt="Aviones"
+                                onclick="window.location.href='aviones.html'">
+                            <img src="img/aviones2.jpg" class="movie-poster" alt="Aviones 2: Equipo de Rescate"
+                                onclick="window.location.href='aviones2.html'">
+                        </div>
+                    </div>
                 </div>
-                <hr><br>
-                <div>
-                    <h2>Información de contacto</h2>
-                    <h4><b>Email: </b>paginacars@gmail.com</h4>
-                    <h4><b>Teléfono: </b>+54 9 11 3913 1817</h4>
-                </div>
+                <a class="carousel-control-prev custom-carousel-control" href="#movieCarousel" role="button"
+                    data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next custom-carousel-control" href="#movieCarousel" role="button"
+                    data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
             </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 Universo de Cars y Aviones - Disney
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <div class="hidden" id="myElement">
         <button id="back-to-top" onclick="location.href='#inicio'"></button>
     </div>
 </body>
+</body>
+
 </html>
